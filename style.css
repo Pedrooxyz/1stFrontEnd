@@ -1,0 +1,216 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+        background-color: #292524;
+        color: #fafaf9;
+        font-family: "Sono", serif;
+        padding: 40px;
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap:48px;
+    }
+
+    h1{
+        font-size: 42px;
+        text-transform: uppercase;
+        font-family: "Coiny", serif;
+    }
+    
+    header{
+    margin-bottom: 40px;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .logo{
+        display: flex;
+        gap: 16px;
+    }
+    
+    .logo h1{
+        padding-top: 10px;
+    }
+    
+    p{
+        font-size: 20px;
+        line-height: 1.4;  
+    
+    }
+    
+    ul{
+        list-style: none;
+    }
+    
+    .tag{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: "Coiny", serif;
+        color: #fafaf9;
+        padding: 10px;
+        border-radius: 100px;
+    }
+    
+    .fact{
+        font-size: 20px;
+        line-height: 1.4;
+        background-color: #444003;
+        margin-bottom: 16px;
+        padding: 16px;
+        border-radius: 16px;
+    
+        display: flex;
+        align-items: center;
+        gap:24px;
+    }
+
+    @media screen and (max-width: 1050px) {
+        .fact{
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+    
+    .itemA{
+        flex:0 0 500px;
+    }
+    
+    .itemB{
+        flex: 0 0 auto;
+    }
+    
+    .itemC{
+        flex:1 0 auto;
+    }
+    
+    
+    .fact-form{
+        background-color: #444003;
+        padding: 16px 40px;
+        margin-bottom: 40px;
+        border-radius: 16px;
+
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .fact-form input, .fact-form select{
+        background-color: #78716c;
+        padding: 16px;
+        border: none;
+        border-radius: 100px;
+        color: inherit;
+        font-family: inherit;
+        font-size: 16px;
+    }
+
+    .fact-form input::placeholder{
+        color: #a8a29e;
+    }
+
+    .fact-form input:first-child{
+        flex-grow: 1;
+    }
+
+    @media screen and (max-width: 1050px) {
+        body{
+            padding: 20px;
+        }
+
+        .fact-form{
+            flex-direction: column;
+            align-items: stretch;
+        }   
+
+    }
+    
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .source:link, .source:visited{
+        color:#a8a29e;
+    }
+
+    .source:hover, .source:active{
+        color:blue;
+        text-decoration: none;
+        margin-left: 12px;
+        transition: 1s;
+    }
+
+    .btn{
+        font-family: "Coiny", serif;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 17px;
+        padding: 16px 0px 13px;
+        background-image: linear-gradient(135deg, blue, #ef4444, #16a34a, #eab308);
+        border-radius: 50px;
+        cursor: pointer;
+        color: inherit;
+    }
+
+    .btn-large{
+        font-size: 30px;
+        padding: 20px 32px 17px;
+    }
+
+    .btn-category{
+        width: 100%;
+        background-image: none;
+        margin-bottom: 16px;
+    }
+
+    .btn-all-category{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .btn:hover{
+        transform: scale(110%) rotate(-2deg)
+    }
+      
+    .voting-buttons{
+        display: flex;
+        justify-content: end;
+        gap:10px;
+        flex-shrink: 0;
+    }
+
+    .voting-buttons button{
+        background-color: #78716c;
+        border: none;
+        font-size: 18px;
+        padding: 6px 12px;
+        border-radius: 100px;
+        color: inherit;
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    .voting-buttons button:hover{
+        background-color: #292524;
+    }
+
+    @media screen and (max-width: 600px) {
+        main{
+            grid-template-columns: 1fr;
+        }
+    }
