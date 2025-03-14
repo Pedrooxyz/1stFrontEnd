@@ -1,4 +1,4 @@
-const btn = document.querySelector('.btn-open');
+const btnOpen = document.querySelector('.btn-open');
 const form = document.querySelector('.fact-form');
 
 btnOpen.addEventListener('click', function() {
