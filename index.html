@@ -11,6 +11,13 @@
     
     <link href="./style.css" rel="stylesheet">
 
+    <!-- Link do CSS do Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Script do Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
 </head>
 <body>
 <div class="container">
@@ -25,6 +32,12 @@
 
     </header>
 
+    <section class="iss-tracker">
+        <h2><div id="issIcon"></div>ISS Tracker</h2>
+        <p>Velocidade: <span  id="iss-speed">Carregando...</span> km/h</p>
+        <p class="mapa"><div id="map" style="height: 400px;"></div>
+        </p>
+    </section>
 
     <form class="fact-form hidden">
 

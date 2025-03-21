@@ -12,6 +12,16 @@
         padding: 40px;
     }
     
+    .iss-tracker{
+        margin: 20px; /* Remove as margens externas */
+        padding: 20px; /* Adiciona 20px de espaço dentro do elemento em todos os lados */
+        text-align:center;
+    }
+
+    .mapa{
+        margin-top: 20px;
+    }
+
     main{
         display: grid;
         grid-template-columns: 250px 1fr;
@@ -26,7 +36,7 @@
     
     header{
     margin-bottom: 40px;
-    
+
     
     display: flex;
     justify-content: space-between;
