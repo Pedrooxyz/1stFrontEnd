@@ -39,7 +39,9 @@ async function getISSData(){
 
         // Atualizar velocidade
         document.getElementById('iss-speed').textContent = velocity.toFixed(2);
-
+        document.getElementById('iss-latitude').textContent = latitude.toFixed(2);
+        document.getElementById('iss-longitude').textContent = longitude.toFixed(2);
+        
         // Definir o centro do mapa apenas na primeira vez
         if (!map.getCenter().lat && !map.getCenter().lng) {
             map.setView([latitude, longitude], 5);
