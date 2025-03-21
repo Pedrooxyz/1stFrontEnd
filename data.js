@@ -43,5 +43,3 @@ const initialFacts = [
   },
 ];
 
-
-// 👍 🤯 ⛔️

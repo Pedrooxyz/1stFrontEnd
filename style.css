@@ -13,9 +13,8 @@
     }
     
     .iss-tracker{
-        margin: 20px; /* Remove as margens externas */
-        padding: 20px; /* Adiciona 20px de espaço dentro do elemento em todos os lados */
-        text-align:center;
+        margin: 20px; 
+        padding: 20px; 
     }
 
     .mapa{

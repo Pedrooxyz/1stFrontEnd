@@ -1,2 +1,3 @@
 # 1stFrontEnd
 Este repositório contém os primeiros conceitos aprendidos na disciplina de Programação Web (PWeb). O objetivo é explorar as bases do desenvolvimento web, incluindo HTML, CSS e JavaScript, bem como introduzir conceitos fundamentais sobre frameworks, bibliotecas e interatividade no frontend.
+Está implementada a consulta à API da Estação Espacial Internacional (ISS) e integrado um mapa interativo usando o Leaflet para rastrear a localização da ISS em tempo real. Também foi adicionado um campo para mostrar a velocidade, a latitude e a longitude da ISS. Foi utilizada a Fetch API para consultar dados de uma API pública.

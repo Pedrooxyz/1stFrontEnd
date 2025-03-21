@@ -21,15 +21,12 @@ async function getISSData(){
 
         const { latitude, longitude, velocity } = data;
 
-        // Atualizar posição no mapa
         marker.setLatLng([latitude, longitude]);
 
-        // Atualizar velocidade
         document.getElementById('iss-speed').textContent = velocity.toFixed(2);
         document.getElementById('iss-latitude').textContent = latitude.toFixed(2);
         document.getElementById('iss-longitude').textContent = longitude.toFixed(2);
         
-        // Definir o centro do mapa apenas na primeira vez
         if (!map.getCenter().lat && !map.getCenter().lng) {
             map.setView([latitude, longitude], 5);
         }
@@ -40,6 +37,5 @@ async function getISSData(){
 
 }
 
-// Chamar a função a cada 5 segundos
 getISSData();
 setInterval(getISSData, 5000);
