@@ -16,7 +16,9 @@
 
     <!-- Script do Leaflet -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
+    
+    <!-- Script do Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
@@ -39,6 +41,11 @@
         <p>Longitude: <span  id="iss-longitude">Carregando...</span></p>
         <p class="mapa"><div id="map" style="height: 400px;"></div>
         </p>
+    </section>
+        
+    <section class="GraficoTemp">
+        <h2>Temperaturas Globais (NASA)</h2>
+        <canvas id="graficoTemperaturas" width="500" height="200"></canvas>
     </section>
 
     <form class="fact-form hidden">
@@ -109,6 +116,7 @@
 
 <script src="./script.js"></script>
 <script src="./APIiss.js"></script>
+<script src="./GraficoTemp.js"></script>
    
 </body>
 </html>
